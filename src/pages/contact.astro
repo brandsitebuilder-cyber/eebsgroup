@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Contact"
+  description="Get in touch with Eben van der Wath at Eebs Group. Furniture orders, citrus nursery enquiries, or just a chat about what you need."
+>
+  <Header />
+
+  <main>
+    <!-- Page Hero -->
+    <section class="pt-32 pb-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(200,150,62,0.06),transparent_60%)]" />
+      <div class="container px-6 text-center relative">
+        <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-4">Get in Touch</p>
+        <h1 class="font-serif text-4xl md:text-5xl font-bold mb-5">Let's Talk</h1>
+        <p class="text-text-muted text-lg max-w-xl mx-auto">
+          Whether it's a custom dining table or a dozen lemon trees — reach out and we'll make it happen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Grid -->
+    <section class="section-padding border-t border-border">
+      <div class="container px-6">
+        <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+          <!-- Contact Info -->
+          <div>
+            <h2 class="font-serif text-2xl font-bold mb-6">Contact Details</h2>
+            <div class="space-y-5">
+              <div class="card">
+                <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-2">Phone</p>
+                <a href="tel:+278****1234" class="text-lg font-medium hover:text-accent transition-colors">082 555 1234</a>
+                <p class="text-text-dim text-xs mt-1">Call or WhatsApp — Eben will answer</p>
+              </div>
+              <div class="card">
+                <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-2">Email</p>
+                <a href="mailto:info@eebsgroup.co.za" class="text-lg font-medium hover:text-accent transition-colors">info@eebsgroup.co.za</a>
+                <p class="text-text-dim text-xs mt-1">We usually reply within 24 hours</p>
+              </div>
+              <div class="card">
+                <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-2">Locations</p>
+                <div class="space-y-2 text-sm">
+                  <p><strong class="text-text">Clanwilliam</strong> <span class="text-text-muted">— Workshop &amp; Nursery</span></p>
+                  <p><strong class="text-text">Porterville</strong> <span class="text-text-muted">— Furniture Showroom</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div>
+            <h2 class="font-serif text-2xl font-bold mb-6">Send a Message</h2>
+            <form class="space-y-5" id="contact-form">
+              <div>
+                <label for="name" class="block text-sm font-medium text-text-muted mb-2">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full bg-bg-card border border-border rounded-lg px-4 py-3 text-text placeholder:text-text-dim focus:outline-none focus:border-accent/40 transition-colors"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-text-muted mb-2">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full bg-bg-card border border-border rounded-lg px-4 py-3 text-text placeholder:text-text-dim focus:outline-none focus:border-accent/40 transition-colors"
+                  placeholder="john@example.com"
+                />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-text-muted mb-2">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="w-full bg-bg-card border border-border rounded-lg px-4 py-3 text-text placeholder:text-text-dim focus:outline-none focus:border-accent/40 transition-colors"
+                  placeholder="082 123 4567"
+                />
+              </div>
+              <div>
+                <label for="interest" class="block text-sm font-medium text-text-muted mb-2">I'm interested in</label>
+                <select
+                  id="interest"
+                  name="interest"
+                  class="w-full bg-bg-card border border-border rounded-lg px-4 py-3 text-text focus:outline-none focus:border-accent/40 transition-colors"
+                >
+                  <option value="">Select...</option>
+                  <option value="furniture">Furniture</option>
+                  <option value="nursery">Citrus Trees</option>
+                  <option value="both">Both</option>
+                  <option value="other">Something Else</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-text-muted mb-2">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="w-full bg-bg-card border border-border rounded-lg px-4 py-3 text-text placeholder:text-text-dim focus:outline-none focus:border-accent/40 transition-colors resize-none"
+                  placeholder="Tell us what you're looking for..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary w-full justify-center py-3 text-base">
+                Send Message
+              </button>
+              <p id="form-feedback" class="text-green text-sm text-center hidden">Message sent! We'll get back to you soon.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const feedback = document.getElementById('form-feedback');
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    feedback?.classList.remove('hidden');
+    form.reset();
+    setTimeout(() => feedback?.classList.add('hidden'), 5000);
+  });
+</script>

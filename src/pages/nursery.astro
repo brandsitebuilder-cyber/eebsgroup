@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Citrus Nursery"
+  description="Premium citrus trees — oranges, lemons, naartjies, limes, and grapefruit. Healthy grafted trees from Eebs Group Nursery in Clanwilliam."
+>
+  <Header />
+
+  <main>
+    <!-- Page Hero -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(107,155,110,0.08),transparent_60%)]" />
+      <div class="container px-6 text-center relative">
+        <p class="text-green text-xs font-semibold tracking-widest uppercase mb-4">Nursery</p>
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-5">
+          Citrus Tree <span class="text-green">Nursery</span>
+        </h1>
+        <p class="text-text-muted text-lg max-w-2xl mx-auto leading-relaxed">
+          Grafted citrus trees that thrive in Western Cape conditions. From backyard gardeners to commercial orchards — we've got your trees.
+        </p>
+      </div>
+    </section>
+
+    <!-- Varieties -->
+    <section class="section-padding border-t border-border">
+      <div class="container px-6">
+        <div class="text-center mb-14">
+          <h2 class="font-serif text-3xl font-bold mb-3">Our Varieties</h2>
+          <p class="text-text-muted">Premium grafted citrus — ready to plant and bear fruit</p>
+          <div class="section-divider mt-6"></div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="card text-center">
+            <div class="text-3xl mb-4">🍊</div>
+            <h3 class="font-semibold text-lg mb-2">Oranges</h3>
+            <p class="text-text-muted text-sm">Valencia, Navel, and Midnight varieties. Sweet, juicy, and prolific bearers.</p>
+          </div>
+          <div class="card text-center">
+            <div class="text-3xl mb-4">🍋</div>
+            <h3 class="font-semibold text-lg mb-2">Lemons</h3>
+            <p class="text-text-muted text-sm">Eureka and Lisbon lemons. Heavy croppers, perfect for the home garden.</p>
+          </div>
+          <div class="card text-center">
+            <div class="text-3xl mb-4">🍊</div>
+            <h3 class="font-semibold text-lg mb-2">Naartjies</h3>
+            <p class="text-text-muted text-sm">Easy-peel soft citrus. A South African favourite, ideal for kids' lunchboxes.</p>
+          </div>
+          <div class="card text-center">
+            <div class="text-3xl mb-4">🟢</div>
+            <h3 class="font-semibold text-lg mb-2">Limes</h3>
+            <p class="text-text-muted text-sm">Bearss and Tahitian limes. Perfect for drinks, cooking, and fresh use.</p>
+          </div>
+          <div class="card text-center">
+            <div class="text-3xl mb-4">🍊</div>
+            <h3 class="font-semibold text-lg mb-2">Grapefruit</h3>
+            <p class="text-text-muted text-sm">Star Ruby and Marsh varieties. Large, juicy fruit with that classic tang.</p>
+          </div>
+          <div class="card text-center">
+            <div class="text-3xl mb-4">🌱</div>
+            <h3 class="font-semibold text-lg mb-2">Seedlings</h3>
+            <p class="text-text-muted text-sm">Young trees at various stages. Ideal if you want to grow them on yourself.</p>
+          </div>
+          <div class="card text-center">
+            <div class="text-3xl mb-4">📦</div>
+            <h3 class="font-semibold text-lg mb-2">Bulk Orders</h3>
+            <p class="text-text-muted text-sm">Commercial quantities available. Contact us for orchard pricing and delivery.</p>
+          </div>
+          <div class="card text-center">
+            <div class="text-3xl mb-4">💡</div>
+            <h3 class="font-semibold text-lg mb-2">Advice</h3>
+            <p class="text-text-muted text-sm">Not sure what to plant? Eben will help you choose the right trees for your soil.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Our Trees -->
+    <section class="section-padding bg-bg-elevated border-y border-border">
+      <div class="container px-6">
+        <div class="text-center mb-14">
+          <h2 class="font-serif text-3xl font-bold mb-3">Why Our Trees?</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-8 max-w-3xl mx-auto text-center">
+          <div>
+            <div class="text-green text-2xl mb-4">🌿</div>
+            <h3 class="font-semibold mb-2">Grafted &amp; Healthy</h3>
+            <p class="text-text-muted text-sm">All trees are grafted onto hardy rootstock. Disease-free and vigorous.</p>
+          </div>
+          <div>
+            <div class="text-green text-2xl mb-4">☀️</div>
+            <h3 class="font-semibold mb-2">Climate-Ready</h3>
+            <p class="text-text-muted text-sm">Grown in Clanwilliam conditions — these trees are acclimatised to Western Cape weather.</p>
+          </div>
+          <div>
+            <div class="text-green text-2xl mb-4">🤝</div>
+            <h3 class="font-semibold mb-2">Expert Advice</h3>
+            <p class="text-text-muted text-sm">Eben knows his trees. Get planting tips, watering schedules, and care guidance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="section-padding">
+      <div class="container px-6 text-center max-w-2xl">
+        <h2 class="font-serif text-3xl font-bold mb-4">Visit the Nursery</h2>
+        <p class="text-text-muted text-lg mb-3 leading-relaxed">
+          Come browse our trees in Clanwilliam. We're open weekdays and Saturday mornings — or call ahead to make sure Eben is there to help you.
+        </p>
+        <p class="text-text-dim text-sm mb-8">📍 Clanwilliam, Western Cape</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:+278****1234" class="btn-primary text-base py-3 px-8">
+            <span class="text-bg">📞 Call Eben</span>
+          </a>
+          <a href="/contact" class="btn-outline text-base py-3 px-8">Send Message</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

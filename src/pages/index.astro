@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Eebs Group"
+  description="Quality furniture and citrus trees. Serving Clanwilliam, Porterville, and the Western Cape."
+>
+  <Header />
+
+  <main>
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <!-- Placeholder gradient hero — replace with actual image -->
+      <div class="absolute inset-0 bg-gradient-to-br from-bg via-bg-elevated to-bg" />
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(200,150,62,0.08),transparent_50%)]" />
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(107,155,110,0.06),transparent_50%)]" />
+
+      <div class="max-w-4xl mx-auto text-center relative px-6 animate-in">
+        <p class="text-accent text-sm font-medium tracking-widest uppercase mb-5">Eben van der Wath</p>
+        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          Quality Furniture<br />
+          <span class="text-accent">&amp; Citrus Trees</span>
+        </h1>
+        <p class="text-text-muted text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+          Two generations of craftsmanship. Serving Clanwilliam, Porterville, and the Western Cape with hand-built furniture and premium citrus nursery stock.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/furniture" class="btn-primary text-base py-3 px-8">Explore Furniture</a>
+          <a href="/nursery" class="btn-outline text-base py-3 px-8">View Nursery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Band -->
+    <section class="border-y border-border bg-bg-elevated">
+      <div class="container px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="stat-number">20+</div>
+          <p class="text-text-dim text-sm mt-1">Years Experience</p>
+        </div>
+        <div>
+          <div class="stat-number">2</div>
+          <p class="text-text-dim text-sm mt-1">Locations</p>
+        </div>
+        <div>
+          <div class="stat-number text-green">50+</div>
+          <p class="text-text-dim text-sm mt-1">Citrus Varieties</p>
+        </div>
+        <div>
+          <div class="stat-number">100%</div>
+          <p class="text-text-dim text-sm mt-1">Local Craft</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two Businesses -->
+    <section class="section-padding">
+      <div class="container px-6">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Furniture Card -->
+          <a href="/furniture" class="card group relative overflow-hidden min-h-[400px] flex flex-col justify-end">
+            <div class="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/70 to-transparent z-10" />
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(200,150,62,0.06),transparent)]" />
+            <div class="relative z-20">
+              <span class="text-accent text-xs font-semibold tracking-widest uppercase">Furniture</span>
+              <h2 class="font-serif text-3xl font-bold mt-2 mb-3">Hand-Built Furniture</h2>
+              <p class="text-text-muted leading-relaxed mb-5 max-w-sm">
+                Custom solid-wood furniture crafted with care. From dining tables to bedroom sets — built to last generations.
+              </p>
+              <span class="text-accent text-sm font-medium group-hover:underline">Learn more →</span>
+            </div>
+          </a>
+
+          <!-- Nursery Card -->
+          <a href="/nursery" class="card group relative overflow-hidden min-h-[400px] flex flex-col justify-end">
+            <div class="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/70 to-transparent z-10" />
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(107,155,110,0.06),transparent)]" />
+            <div class="relative z-20">
+              <span class="text-green text-xs font-semibold tracking-widest uppercase">Nursery</span>
+              <h2 class="font-serif text-3xl font-bold mt-2 mb-3">Citrus Tree Nursery</h2>
+              <p class="text-text-muted leading-relaxed mb-5 max-w-sm">
+                Premium citrus trees — oranges, lemons, naartjies, limes, and grapefruit. Healthy, grafted, and ready to plant.
+              </p>
+              <span class="text-green text-sm font-medium group-hover:underline">Learn more →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="section-padding bg-bg-elevated">
+      <div class="container px-6">
+        <div class="text-center mb-12">
+          <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-3">Visit Us</p>
+          <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4">Our Locations</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div class="card text-center">
+            <h3 class="font-serif text-xl font-bold mb-2">Clanwilliam</h3>
+            <p class="text-text-muted text-sm">
+              Main workshop &amp; nursery<br />
+              Clanwilliam, Western Cape
+            </p>
+          </div>
+          <div class="card text-center">
+            <h3 class="font-serif text-xl font-bold mb-2">Porterville</h3>
+            <p class="text-text-muted text-sm">
+              Showroom &amp; display<br />
+              Porterville, Western Cape
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding">
+      <div class="container px-6 text-center max-w-2xl">
+        <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4">Ready to get started?</h2>
+        <p class="text-text-muted text-lg mb-8">
+          Whether you need a custom dining table or a dozen lemon trees — we'd love to hear from you.
+        </p>
+        <a href="/contact" class="btn-primary text-base py-3 px-8">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

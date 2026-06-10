@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Furniture"
+  description="Hand-built solid wood furniture by Eben van der Wath. Custom dining tables, bedroom sets, and more. Serving Clanwilliam and Porterville."
+>
+  <Header />
+
+  <main>
+    <!-- Page Hero -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(200,150,62,0.08),transparent_60%)]" />
+      <div class="container px-6 text-center relative">
+        <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-4">Furniture</p>
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-5">
+          Hand-Built <span class="text-accent">Furniture</span>
+        </h1>
+        <p class="text-text-muted text-lg max-w-2xl mx-auto leading-relaxed">
+          Solid-wood furniture crafted with traditional techniques. Every piece is built by Eben van der Wath in our Clanwilliam workshop.
+        </p>
+      </div>
+    </section>
+
+    <!-- What We Make -->
+    <section class="section-padding border-t border-border">
+      <div class="container px-6">
+        <div class="text-center mb-14">
+          <h2 class="font-serif text-3xl font-bold mb-3">What We Build</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card">
+            <div class="text-accent text-2xl mb-4">🪑</div>
+            <h3 class="font-semibold text-lg mb-2">Dining Tables</h3>
+            <p class="text-text-muted text-sm leading-relaxed">
+              Solid oak, yellowwood, and pine dining tables. Custom sizes for any space — 4-seater to 12-seater.
+            </p>
+          </div>
+          <div class="card">
+            <div class="text-accent text-2xl mb-4">🛏️</div>
+            <h3 class="font-semibold text-lg mb-2">Bedroom Sets</h3>
+            <p class="text-text-muted text-sm leading-relaxed">
+              Beds, headboards, nightstands, and wardrobes. Matching sets built to your specifications.
+            </p>
+          </div>
+          <div class="card">
+            <div class="text-accent text-2xl mb-4">🛋️</div>
+            <h3 class="font-semibold text-lg mb-2">Living Room</h3>
+            <p class="text-text-muted text-sm leading-relaxed">
+              Coffee tables, TV units, bookshelves, and display cabinets. Functional beauty for your home.
+            </p>
+          </div>
+          <div class="card">
+            <div class="text-accent text-2xl mb-4">🚪</div>
+            <h3 class="font-semibold text-lg mb-2">Doors &amp; Frames</h3>
+            <p class="text-text-muted text-sm leading-relaxed">
+              Custom wooden doors, window frames, and architraves. Built to measure and properly seasoned.
+            </p>
+          </div>
+          <div class="card">
+            <div class="text-accent text-2xl mb-4">🪜</div>
+            <h3 class="font-semibold text-lg mb-2">Outdoor Furniture</h3>
+            <p class="text-text-muted text-sm leading-relaxed">
+              Benches, picnic tables, and patio sets. Treated for outdoor use — perfect for the Western Cape climate.
+            </p>
+          </div>
+          <div class="card">
+            <div class="text-accent text-2xl mb-4">✨</div>
+            <h3 class="font-semibold text-lg mb-2">Custom Orders</h3>
+            <p class="text-text-muted text-sm leading-relaxed">
+              Have something specific in mind? We build to order. Bring your design or let us create one for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section-padding bg-bg-elevated border-y border-border">
+      <div class="container px-6">
+        <div class="text-center mb-14">
+          <h2 class="font-serif text-3xl font-bold mb-3">Our Process</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-8 max-w-3xl mx-auto text-center">
+          <div>
+            <div class="w-12 h-12 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4 font-bold">1</div>
+            <h3 class="font-semibold mb-2">Design</h3>
+            <p class="text-text-muted text-sm">Tell us what you need. We'll design a piece that fits your space and style.</p>
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4 font-bold">2</div>
+            <h3 class="font-semibold mb-2">Build</h3>
+            <p class="text-text-muted text-sm">Hand-built in our Clanwilliam workshop using time-tested joinery techniques.</p>
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4 font-bold">3</div>
+            <h3 class="font-semibold mb-2">Deliver</h3>
+            <p class="text-text-muted text-sm">We deliver across the Western Cape and can arrange installation if needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="section-padding">
+      <div class="container px-6">
+        <div class="text-center mb-12">
+          <h2 class="font-serif text-3xl font-bold mb-3">Where to Find Us</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div class="card">
+            <h3 class="font-serif text-xl font-bold mb-3">Clanwilliam</h3>
+            <p class="text-text-muted text-sm leading-relaxed mb-3">
+              Our main workshop. Come see current projects and discuss custom orders in person.
+            </p>
+            <p class="text-text-dim text-xs">📍 Clanwilliam, Western Cape</p>
+          </div>
+          <div class="card">
+            <h3 class="font-serif text-xl font-bold mb-3">Porterville</h3>
+            <p class="text-text-muted text-sm leading-relaxed mb-3">
+              Our showroom. Browse finished pieces and place orders for custom furniture.
+            </p>
+            <p class="text-text-dim text-xs">📍 Porterville, Western Cape</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding border-t border-border bg-bg-elevated">
+      <div class="container px-6 text-center max-w-2xl">
+        <h2 class="font-serif text-3xl font-bold mb-4">Want a custom piece?</h2>
+        <p class="text-text-muted text-lg mb-8">
+          Call Eben directly to discuss your furniture needs. No job too big or too small.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:+278****1234" class="btn-primary text-base py-3 px-8">📞 Call Now</a>
+          <a href="/contact" class="btn-outline text-base py-3 px-8">Send Message</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
