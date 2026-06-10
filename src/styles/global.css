@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
+
 
   --color-bg: #08090A;
   --color-bg-elevated: #0F1113;
@@ -131,7 +131,7 @@ a:hover {
 
 /* Stat number */
 .stat-number {
-  font-family: var(--font-serif);
+  font-weight: 700;
   font-size: 2.5rem;
   color: var(--color-accent);
   line-height: 1;
